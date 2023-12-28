@@ -1,0 +1,34 @@
+
+.footcer_1 { background:url(bg.jpg) top center repeat-x #000; border-top:double 1px #FF0000;}
+.footcer_2 { margin:0 auto; width:1200px; height:300px; position:relative;}
+.footcer_3 { width:250px; height:140px; position:absolute; top:130px; left:0; z-index:7;}
+.footcer_3 img { width:250px; height:140px;}
+.footcer_4 { width:1200px; height:70px; line-height:70px; text-align:center; border-bottom:dashed 1px #333; position:absolute; top:0px; left:0; z-index:7;}
+.footcer_4 a { font-size:14px; font-weight:200; color:#999; letter-spacing:3.5pt;}
+.footcer_5 { width:200px; height:57px; position:absolute; top:170px; left:250px; border-left:double 1px #333; z-index:7;}
+.footcer_5 img { width:200px; height:57px;}
+
+.footcer_6 { width:800px; overflow:hidden; position:absolute; top:160px; right:0; text-align:right; z-index:7; color:#666; letter-spacing:1.4pt;}
+.footcer_6 a { padding:8px 5px; font-size:12px; color:#666;}
+.footcer_6 a:hover { color:#0CF; text-decoration:underline;}
+
+.footcer_7 { width:800px; overflow:hidden; position:absolute; top:190px; right:0; text-align:right; z-index:7; color:#666; letter-spacing:1.4pt;}
+.footcer_7 a { padding:8px 5px; font-size:12px; color:#666; letter-spacing:1pt;}
+.footcer_7 a:hover { color:#0CF; text-decoration:underline;}
+
+.footcer_8 { width:800px; overflow:hidden; position:absolute; top:220px; right:0; text-align:right; z-index:7; color:#666; letter-spacing:1.4pt;}
+.footcer_8 a { padding:8px 5px; font-size:12px; color:#666; letter-spacing:1pt;}
+.footcer_8 a:hover { color:#0CF; text-decoration:underline;}
+
+.footcer_9 { width:800px; overflow:hidden; position:absolute; top:250px; right:0; text-align:right; z-index:7; color:#666; letter-spacing:1.4pt;}
+.footcer_9 a { padding:8px 5px; font-size:12px; color:#69F; font-weight:bold; letter-spacing:1.4pt;}
+.footcer_9 a:hover { color:#0CF; text-decoration:underline;}
+.footcer_9 span { color:#713D0D}
+
+.footcer_10 { width:800px; overflow:hidden; position:absolute; top:130px; right:0; text-align:right; z-index:7; color:#666; letter-spacing:1.4pt;}
+.footcer_10 a { padding:8px 5px; font-size:12px; color:#69F; font-weight:bold; letter-spacing:1pt;}
+.footcer_10 a:hover { color:#0CF; text-decoration:underline;}
+.footcer_10 span { color:#0CF}
+
+.kv-music {position:fixed;z-index:50;top:50px;left:50px; background:url(mp3.png); width:70px; height:70px;}
+.kv-music a { display:block; font-size:14px; color:#FFF; letter-spacing:5.0pt; padding:45px 0 0 15px;}

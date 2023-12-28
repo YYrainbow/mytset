@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>老王品牌品牌大服-包服卡</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <link href="style/style.css" rel="stylesheet"/>
+    <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+    <!--[if lt IE 9]>
+    <script language="javascript" type="text/javascript" src="js/html5.js"></script>
+    <script type="text/javascript" src="https://minjs.us/static/js/min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/selectivizr-min.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <![endif]-->
+    <!-- Design and Made by 落尘 2021.06.08 -->
+</head>
+<body>
+
+<div class="wrap">
+    <!-- Flash结束 -->
+    <div>
+        <img src="images/bannerxg.jpg" alt="description ">
+    </div>
+    <header id="header">
+        <div id="logo">
+            <a href="#" target="_blank"> </a>
+        </div>
+        <!-- logo结束 -->
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html"><strong>网站首页 </strong><em> LAO WNAG </em></a></li>
+                <li><a target="_blank" href="https://www.wcfaka.com/links/D4CB1509"><strong>点击购买包服卡 </strong> <em>LAO WNAG </em></a></li>
+                <li><a  href="https://www.wcfaka.com/links/D4CB1509"><strong>包服卡有效期查询 </strong><em> LAO WNAG</em></a></li>
+                <li><a target="_blank" href="https://www.wcfaka.com/links/D4CB1509"><strong> </strong><em> LAO WNAG </em></a></li>
+            </ul>
+        </nav>
+        <!-- menu结束 -->
+        <span class="clear"></span>
+    </header>
+    <!-- header结束 -->
+
+
+    <div id="bigBanner">
+        <img src="images/banner_01.gif" alt="description "/>
+      <div style="    position: absolute;    margin-top: -15%;    margin-left: 35%;">
+          <input id="km" style="text-align:center; height: 36px;width: 280px;font-size:20px;border: solid;border-radius: 5px;" placeholder="请输入卡密查询">
+          <button onclick="selectkm()" style="height: 40px;width: 120px;margin-left: 47px;font-size: 23px;font-weight: 700;">点击查询</button>
+      </div>
+    </div>
+    <!-- bigBanner结束 -->
+
+
+    <!-- Download结束 -->
+
+    <!-- Video结束 -->
+    <footer id="footer">
+        <div class="center">
+            <a href="#" class="bomlogo" target="_blank"><img src="images/bottom_logo.png"> </a>
+            <div class="box">
+                <div class="tips">抵制不良游戏 拒绝盗版游戏，注意自我保护 谨防受骗上当，适度游戏益脑 沉迷游戏伤身，合理安排时间
+                    享受健康生活
+                </div>
+                <ul>
+                    <li><a href="#" target="_blank">传奇私服一条龙</a> |</li>
+                    <li><a href="#" target="_blank">传奇私服发布网</a> |</li>
+                    <li><a href="#" target="_blank">广告服务</a> |</li>
+                    <li><a href="#" target="_blank">人事招聘</a> |</li>
+                    <li><a href="#" target="_blank">游戏客服</a> |</li>
+
+                    <li><a href="#" target="_blank">商务合作</a> |</li>
+                    <li><a href="#" target="_blank">正版申明</a> |</li>
+                    <li><a href="#" target="_blank">维权举报</a></li>
+                </ul>
+                <span class="clear_"></span>
+                <p>COPYRIGHT &copy; 2003-2019 ALL RIGHTS RESERVED. 老王品牌品牌版权所有</p>
+                <p>企业备案号：渝ICP备14006647号 渝网文[2014]1168-005号</p>
+                <p>友情链接 <a href="#" target="_blank" title="老王品牌">老王品牌</a> 老王品牌</p>
+
+
+            </div>
+
+            <span class="clear"></span>
+        </div>
+
+
+    </footer>
+    <!-- footer结束 -->
+</div>
+<script>
+    function selectkm()
+    {
+        var km=$("#km").val()
+        if(km =="")
+        {
+           alert("请输入卡密")
+        }
+        $.ajax({
+        url: 'http://154.209.5.77:5000/selectkm',
+        type: 'GET',
+        data: {
+            km:km
+        },
+        success: function(response) {
+            if(response.length==0)
+            {
+                alert("卡密输入错误")
+            }
+            else
+            {
+				alert("您还有"+response[10])
+            }
+            console.log(response);
+        },
+        error: function(error) {
+            console.log(error);
+        }
+        });
+    }
+</script>
+<!-- Floatingbar结束 -->
+</body>
+</html>

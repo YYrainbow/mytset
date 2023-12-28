@@ -1,0 +1,37 @@
+/*
+┌─────────95A5──────────────────────┐
+│ 网站设计制作:≮九五网络≯ QQ:95027066 唯一网址：WWW.25vi.COM     │
+│        十余年网页设计制作经验、高端建站美工团队为你服务          │
+└───────────────────────────── .Com ─┘
+*/
+@charset "utf-8";
+/* CSS Document */
+* { margin:0; padding:0; }
+body,td,th { font-size: 14px; }
+body { color:#383838; font-size:14px; font-family:"微软雅黑",Microsoft YaHei,Arial,Verdana; overflow-y:scroll; margin:0px;}
+
+a { font-size: 14px; color:#2b262b; }
+a:link { text-decoration: none;}
+a:visited { text-decoration: none; color:#2b262b; }
+a:hover { text-decoration: none; color:#775145; text-decoration:none;}
+a:active { text-decoration: none; color:#775145;}
+ul {  margin:0 0 0 0; padding: 0; list-style: none; }
+img{ border:0;}
+
+#PicShow{ float:left; width:1200px; height:600px; position:relative; display:inline; margin-left:150px;}/*主框大小与外框大小一样*/
+#PicShow .gundong{width:1200px; position:relative;}/*调整箭头宽*/
+#PicShow .gundong .jCarouselLite { float:left; width:1200px; overflow:hidden;}/*图像暂用高度这里宽度和上调CSS一样*/
+#PicShow .move_right,#PicShow .move_left{ width:86px; height:600px;position:absolute; z-index:500;}/*调整箭头上下艰巨*/
+#PicShow .move_left span,#PicShow .move_right span{width:86px;height:64px;position:absolute; top:46%; background:url(arrow.png) no-repeat left top;background-repeat:no-repeat;}
+#PicShow .move_left{left:-100px;}
+#PicShow .move_left span{background-position:left top;}
+#PicShow .move_left:hover span{background-position:left bottom;}
+#PicShow .move_right{right:-100px;}
+#PicShow .move_right span{background-position:right top;}
+#PicShow .move_right:hover span{background-position:right bottom;}	
+
+.PicList{ float:left;}
+.PicList li{ float:left; width:1200px; display:inline;}/*图形宽度 这里的和第三2个CSS的宽度一直*/
+.PicList li a img {width:1200px;height:600px;}
+
+.gund { margin:0 auto; width:1500px; height:600px;}/*这里写完整的宽度*/
